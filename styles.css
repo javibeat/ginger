@@ -1,0 +1,222 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;background-color: #fffcf8;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #faf3ea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  /* Estilos para los enlaces */
+a {
+    text-decoration: none;
+    color: #977400;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+  }
+  
+  .desktop-menu {
+    display: flex;
+    align-items: center;
+    list-style: none; /* Elimina los puntos del menú de la versión normal */
+    padding: 0; /* Elimina el padding del menú de la versión normal */
+  }
+  
+  .desktop-menu li {
+    margin: 0 10px;
+  }
+  
+  .desktop-menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bb9a31;
+  }
+  
+  /* Estilos para la versión móvil */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      position: static;
+    }
+  
+    .navbar-logo {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .desktop-menu {
+      display: none; /* Oculta el menú de la versión normal en la versión móvil */
+    }
+  
+    .mobile-navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3faea;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    .mobile-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .mobile-menu li {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .mobile-menu a {
+      display: block;
+      color: #bb9a31;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  
+    /* Agrega los estilos para los iconos usando Font Awesome */
+    .mobile-menu li a i {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .image-section {
+        margin-top: 90px;
+    }
+  }
+  
+  /* Estilos para el contenido centrado */
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #977400;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+  }
+  
+  .logo-section {
+    margin-top: 90px;
+  }
+  
+  .logo-section img {
+    height: 100%;
+  }
+  
+  .logo-section h1 {
+    margin-top: 10px;
+  }
+  
+  .mainh1 {
+    color: #472e85;
+  }
+
+  .welcome-section {
+    margin-top: 30px;
+  }
+  
+  .welcome-box {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: left;
+    border: 2px solid #cab06357;
+    border-radius: 15px;
+    text-align: justify;
+  }
+  
+  .welcome-section h2 {
+    text-align: center;
+    color: #bb9a31;
+    font-size: 24px;
+  }
+  
+  .welcome-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Estilos para la sección de servicios */
+.services-section {
+    margin-top: 30px;
+  }
+  
+  .services-section h2 {
+    color: #bb9a31;
+    font-size: 24px;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .service-box {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #cab06357;
+    border-radius: 15px;
+  }
+  
+  .service-box i {
+    font-size: 48px;
+    color: #bb9a31;
+    margin-bottom: 10px;
+  }
+  
+  .service-box h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Estilos para la versión móvil */
+  @media screen and (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+    }
+  
+    .service-box {
+      max-width: 100%;
+    }
+
+    .services-section {
+        margin-bottom: 20%;
+      }
+  }
+  
